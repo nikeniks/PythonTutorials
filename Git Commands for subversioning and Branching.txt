@@ -12,3 +12,9 @@ git checkout "branch name" (switches to that branch repo)
 git fetch "branch name" (to add files to work on in branch from existing branch or repo)
 git merge "master branch name" "child brnach name" (to merge two repo) or you can perform a pul request on git hub 
 git ls-tree --full-name -r --name-only master (list out all the files in that repo)
+git diff --name-only "commit 1" "commit 2" (to check the files that got changed in different commits)
+
+
+difference in git pull and git fetch is that 
+in background when you call git pull it internally calls git fetch and then merges it with the local branch
+but it git fetch it only perform fetch operation and not the merge
