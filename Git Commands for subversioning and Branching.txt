@@ -1,0 +1,11 @@
+echo "# PythonTutorials" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/nikeniks/PythonTutorials.git
+git push -u origin master
+
+
+git branch (list out all the branches)
+git branch "branch name" (creates new branch to the master)
+git checkout "branch name" (switches to that branch repo)
