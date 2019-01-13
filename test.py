@@ -1,5 +1,28 @@
-#test=[1,2,3,4]
 
+from threading import *
+from time import sleep
+
+class Hello(Thread):
+    def run(self):
+        ranger=input("enter the range")
+        for i in range(int(ranger)):
+            print("Hello")
+            sleep(1)
+            
+class Hi(Thread):
+    def run(self):
+        for i in range(20):
+            print("Hi")
+            sleep(1)
+t1=Hello()
+t2=Hi()
+
+t1.start()
+sleep(2)
+t2.start()
+
+
+'''
 datalist=[]
 
 for i in range(5):
@@ -7,4 +30,4 @@ for i in range(5):
 
 for x in range(len(datalist)):
     keyValuePair=datalist[x]
-    print(keyValuePair["range"])
+    print(keyValuePair["range"])'''
