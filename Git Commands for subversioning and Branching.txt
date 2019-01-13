@@ -4,7 +4,7 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/nikeniks/PythonTutorials.git
 git push -u origin master
-
+git pull orgin master (to synch the local with the git hub repo)
 
 git branch (list out all the branches)
 git branch "branch name" (creates new branch to the master)
