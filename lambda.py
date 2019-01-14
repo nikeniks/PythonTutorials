@@ -13,8 +13,9 @@ from time import sleep
 def timer(seconds):
     while seconds:
         min, sec = divmod(seconds,60)
-        count='{:0d}:{:0.1d}'.format(min,sec)
-        print(count,end="\r")
+        count='{}.{:d}'.format(min,sec)
+        print(float(count)/10,end="\r")
+        #print("\r")
         sleep(1)
         seconds -= 1
 timer(10)
