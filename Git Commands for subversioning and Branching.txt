@@ -17,4 +17,4 @@ git diff --name-only "commit 1" "commit 2" (to check the files that got changed 
 
 difference in git pull and git fetch is that 
 in background when you call git pull it internally calls git fetch and then merges it with the local branch
-but it git fetch it only perform fetch operation and not the merge
+but in git fetch it only perform fetch operation and not the merge
